@@ -1,0 +1,47 @@
+﻿    <div class="container banner">
+        <div class="row">
+            <img src="http://www.xlza.net/upload/pc_img/Menu/20151015/o_e7a9ff432efb44f195e57c29145f00c2.jpg" alt="服务项目" />
+        </div>
+    </div>
+
+    <div class="container bg_color">
+        <div class="space-20"></div>
+        <div class="row">
+            <div class="col-xs-12 col-md-9">
+                <div class="ss_title"><span>所有产品</span></div>
+                <div class="space-10"></div>
+                <div class="row frame_box">
+                    <foreach name="list" item="v">
+                        <div class="col-xs-6 col-md-4">
+                            <a href="{:U('detail',"pro_id=$v[id]")}" title="{$v['name']}" class="item2">
+                                <img src="__ROOT__{$v['proimg'][0]['img']}" alt="{$v['name']}" />
+                                <span>{$v['name']}</span>
+                            </a>
+                            <div class="space-40"></div>
+                        </div>
+                    </foreach>
+                </div>
+                <div class="space-10"></div>
+            </div>
+        </div>
+        <div class="space-20"></div>
+    </div>
+
+   <script type="text/javascript" src="__HOME__/js/push.js"></script>
+    <script type="text/javascript" src="__HOME__/js/classie.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".n_list").mouseenter(function () {
+                $(this).find(".a_link").addClass("hover");
+                $(this).find("ul").show();
+            }).mouseleave(function () {
+                $(this).find(".a_link").removeClass("hover");
+                $(this).find("ul").hide();
+            });
+            $(".order .title_nav").click()
+        });
+    </script>
+
+</body>
+
+</html>

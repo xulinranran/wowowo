@@ -1,0 +1,52 @@
+﻿    <div class="container banner">
+        <div class="row">
+            <img src="http://www.xlza.net/Content/SysImg/temp6/s_banner.jpg" alt="联系我们" />
+        </div>
+    </div>
+
+    <div class="container bg_color">
+        <div class="space-50"></div>
+        <div class="row">
+            <div class="col-xs-12 col-md-3">
+                <div class="side_t">关于我们</div>
+                <ul class="side_ul">
+                    <li>
+                        <a title=""><i></i><span>公司简介</span></a>
+                        <div>{$list['content']}</div>
+                    </li>
+                </ul>
+                <div class="space-20"></div>
+            </div>
+            <div class="col-xs-12 col-md-9" style="width:75%">
+                <div class="ss_title"><span>地址</span></div>
+                <div class="map">
+                        <a title="地址" ><i></i><span>地址</span></a>
+                        <ul class="frame_title3">{$list['address']}</ul>
+                    <!-- <iframe src="map.html" width="100%" height="300" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe> -->
+                </div>
+                <div class="space-20"></div>
+                <div class="s_cont">                 
+                    <p>{$list['address']}</p><p>手机：13661475825</p><p>网址：www.wowosmart.com</p><p><br /></p>
+                </div>
+            </div>
+        </div>
+        <div class="space-50"></div>
+    </div>
+    <script type="text/javascript" src="__HOME__/js/push.js"></script>
+    <script type="text/javascript" src="__HOME__/js/classie.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".n_list").mouseenter(function () {
+                $(this).find(".a_link").addClass("hover");
+                $(this).find("ul").show();
+            }).mouseleave(function () {
+                $(this).find(".a_link").removeClass("hover");
+                $(this).find("ul").hide();
+            });
+            $(".order .title_nav").click()
+        });
+    </script>
+
+</body>
+
+</html>

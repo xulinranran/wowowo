@@ -1,0 +1,215 @@
+﻿    <div class="container-fluid">
+        <div class="row">
+            <div id="slides" class="slides">
+                <a href="javascript:void(0);" class="imglist">
+                    <img src="__HOME__/images/o_dc8053424ef748c6b9cdb63fac47840a.jpg" />
+                </a>
+                <a href="javascript:void(0);" class="imglist">
+                    <img src="__HOME__/images/o_018f27b095594790be9e067db19249a4.jpg" />
+                </a>
+                <a href="javascript:void(0);" class="imglist">
+                    <img src="__HOME__/images/o_afdf264117664570b542aad10fd5a0ab.jpg" />
+                </a>
+            </div>
+        </div>
+        <script src="__HOME__/js/jquery.slides.js"></script>
+        <script>
+            $(function () {
+                $("#slides").slidesjs({
+                    width: 720,
+                    height: 300,
+                    start: 1,//控制从第几张图开始播放
+                    //控制前后按钮
+                    navigation: {
+                        active: true,//是否开启左右按钮
+                        effect: "fade"//触发按钮时，焦点图切换的特效，可选参数"slide"和"fade"
+                    }
+                });
+            });
+        </script>
+    </div>
+
+
+    <div class="container bg_color">
+        <div class="TitleB">
+            <div class="b_title"><span>产品列表</span></div>
+            <!-- <a title="解决方案" href="/Case/1/758">更多>></a> -->
+        </div>
+        <div class="space-40"></div>
+        <div class="row">
+            <foreach name="list" item="v">
+                <div class="col-xs-6 col-md-3">
+                    <a href="casedetails.html" title="{$v['name']}" class="item2">
+                        <img src="__ROOT__{$v['img']}" alt="{$v['name']}" />
+                        <span>{$v['name']}</span>
+                    </a>
+                    <div class="space-40"></div>
+                </div>
+            </foreach>
+        </div>
+        <div class="space-20"></div>
+    </div>
+
+    <div class="container bg_color">
+        <div class="TitleB">
+            <div class="b_title"><span>成功案例</span></div>
+            <!-- <a title="案例介绍" href="/Case/1/756">更多>></a> -->
+        </div>
+        <div class="space-40"></div>
+        <div class="row proitem">
+            <foreach name="anli" item="val">
+                <div class="col-xs-6 col-md-3">
+                    <a href="casedetails.html" title="{$val['title']}" class="item2">
+                        <img src="__ROOT__{$val['image']}" alt="{$val['title']}" />
+                        <span>{$val['title']}</span>
+                    </a>
+                    <div class="space-40"></div>
+                </div>
+            </foreach>
+        </div>
+        <div class="space-20"></div>
+    </div>
+
+    <div class="container bg_color">
+        <div class="TitleB2">
+            <div class="b_title"><span>合作企业</span></div>
+            <a title="合作企业" href="link.html">更多>></a>
+        </div>
+        <div class="space-40"></div>
+        <div class="row proitem">
+            <div class="col-xs-3 col-md-2">
+                <a href="javascript:void(0);" title="德力西电器" target="_blank" class="item4">
+                    <img src="__HOME__/images/o_c9d99a1952d24a1ab9b472890455a714.jpg" alt="德力西电器" />
+                </a>
+                <div class="space-40"></div>
+            </div>
+            <div class="col-xs-3 col-md-2">
+                <a href="javascript:void(0);" title="博世" target="_blank" class="item4">
+                    <img src="__HOME__/images/o_8d81b5c5cb64468bb82fc5836b833d43.jpg" alt="博世" />
+                </a>
+                <div class="space-40"></div>
+            </div>
+            <div class="col-xs-3 col-md-2">
+                <a href="javascript:void(0);" title="海尔" target="_blank" class="item4">
+                    <img src="__HOME__/images/o_328f2631dfbc4b1bb01eb9e8ad0bafba.jpg" alt="海尔" />
+                </a>
+                <div class="space-40"></div>
+            </div>
+            <div class="col-xs-3 col-md-2">
+                <a href="javascript:void(0);" title="中国万向" target="_blank" class="item4">
+                    <img src="__HOME__/images/o_2f096d402bf34649902d48387b84a588.jpg" alt="中国万向" />
+                </a>
+                <div class="space-40"></div>
+            </div>
+            <div class="col-xs-3 col-md-2">
+                <a href="javascript:void(0);" title="众泰汽车" target="_blank" class="item4">
+                    <img src="__HOME__/images/o_1bbf6d3b80934342a099bf933bd80076.jpg" alt="众泰汽车" />
+                </a>
+                <div class="space-40"></div>
+            </div>
+            <div class="col-xs-3 col-md-2">
+                <a href="javascript:void(0);" title="美的" target="_blank" class="item4">
+                    <img src="__HOME__/images/o_56e9165c3280475b9402829dd8eeb146.jpg" alt="美的" />
+                </a>
+                <div class="space-40"></div>
+            </div>
+            <div class="col-xs-3 col-md-2">
+                <a href="javascript:void(0);" title="老板厨房电器" target="_blank" class="item4">
+                    <img src="__HOME__/images/o_f75042a57cf842a7bc2fd3643f628f62.jpg" alt="老板厨房电器" />
+                </a>
+                <div class="space-40"></div>
+            </div>
+            <div class="col-xs-3 col-md-2">
+                <a href="javascript:void(0);" title="AUTODESK" target="_blank" class="item4">
+                    <img src="__HOME__/images/o_2227fcedc0db41bd950ad8c7cfd8c624.jpg" alt="AUTODESK" />
+                </a>
+                <div class="space-40"></div>
+            </div>
+            <div class="col-xs-3 col-md-2">
+                <a href="javascript:void(0);" title="中国南车" target="_blank" class="item4">
+                    <img src="__HOME__/images/o_43c481e43db64ff48243a32122f960ed.jpg" alt="中国南车" />
+                </a>
+                <div class="space-40"></div>
+            </div>
+            <div class="col-xs-3 col-md-2">
+                <a href="javascript:void(0);" title="奇瑞汽车" target="_blank" class="item4">
+                    <img src="__HOME__/images/o_a09b584ba97f41fb90a32601d85ab78f.jpg" alt="奇瑞汽车" />
+                </a>
+                <div class="space-40"></div>
+            </div>
+            <div class="col-xs-3 col-md-2">
+                <a href="javascript:void(0);" title="九阳" target="_blank" class="item4">
+                    <img src="__HOME__/images/o_ea7791e9a27c41649106c9d39d1c96b2.jpg" alt="九阳" />
+                </a>
+                <div class="space-40"></div>
+            </div>
+            <div class="col-xs-3 col-md-2">
+                <a href="javascript:void(0);" title="苏泊尔" target="_blank" class="item4">
+                    <img src="__HOME__/images/o_ac00e02ad4f544669bbf9a047d2db52c.jpg" alt="苏泊尔" />
+                </a>
+                <div class="space-40"></div>
+            </div>  
+         </div> 
+        <div class="space-20"></div>
+    </div>
+
+    <!--右侧悬浮开始-->
+    <div id="f_right">
+        <div id="kf_list">
+            <div class="f_right_top"><span>在线咨询</span><i id="closebtn" class="fa fa-times"></i></div>
+            <div class="f_right_ul">
+                <div class="ul_list">
+                    <p>投诉电话：<br /><b>13857784883</b></p>
+                    <img src="__HOME__/images/o_386191a2e08c47639b84c290fa998c55.jpg" width="120" />
+                    <p>关注微信公众号</p>
+                </div>
+            </div>
+            <div class="f_right_bot"></div>
+        </div>
+        <div id="r_btn">联系我们</div>
+    </div>
+    <!--右侧悬浮结束-->
+    <script type="text/javascript">
+        //右侧悬浮客服
+        window.onload = window.onresize = window.onscroll = function () {
+            var oBox = document.getElementById("f_right");
+            var oMenu = document.getElementById("kf_list");
+            var iScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            setTimeout(function () {
+                clearInterval(oBox.timer);
+                var iTop = parseInt((document.documentElement.clientHeight - oBox.offsetHeight) / 2) + iScrollTop;
+                oBox.timer = setInterval(function () {
+                    var iSpeed = (iTop - oBox.offsetTop) / 8;
+                    iSpeed = iSpeed > 0 ? Math.ceil(iSpeed) : Math.floor(iSpeed);
+                    oBox.offsetTop == iTop ? clearInterval(oBox.timer) : (oBox.style.top = oBox.offsetTop + iSpeed + "px");
+                }, 30)
+            }, 100)
+        };
+        $(document).ready(function () {
+            $("#closebtn").click(function () {
+                $("#kf_list").hide();
+            });
+            $("#r_btn").click(function () {
+                $("#kf_list").toggle();
+            });
+        });
+    </script>
+
+    <script type="text/javascript" src="__HOME__/js/push.js"></script>
+    <script type="text/javascript" src="__HOME__/js/classie.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".n_list").mouseenter(function () {
+                $(this).find(".a_link").addClass("hover");
+                $(this).find("ul").show();
+            }).mouseleave(function () {
+                $(this).find(".a_link").removeClass("hover");
+                $(this).find("ul").hide();
+            });
+            $(".order .title_nav").click()
+        });
+    </script>
+
+</body>
+
+</html>

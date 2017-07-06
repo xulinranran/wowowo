@@ -1,0 +1,39 @@
+﻿    <div class="container banner">
+        <div class="row">
+            <img src="http://www.xlza.net/upload/pc_img/Menu/20151015/o_7e44a9cc4e9c44678bf580190ce069ef.jpg" alt="关于我们" />
+        </div>
+    </div>
+
+    <div class="container bg_color">
+        <div class="space-20"></div>
+        <div class="row">
+            <div class="col-xs-12 col-md-9">
+                <div class="ss_title"><span style="font-size:20px;">案例信息</span></div>
+                <div class="s_cont">
+                    <strong><span style="font-size:16px;">{$one['title']}</span></strong><br />
+                    <img style="width:100%; height:500px;margin-top: 10px;" src="__ROOT__{$one['caseimg'][0]['image']}" alt="{$v['name']}" />
+                    <p class="p" style="text-indent:22px;line-height:40px;background:#ffffff;margin-top:6px;margin-bottom:6px;"><span style="font-family:微软雅黑;font-size:19px;line-height:40px;"> &nbsp;{$one['descript']}</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="space-20"></div>
+    </div>
+
+    <script type="text/javascript" src="__HOME__/js/push.js"></script>
+    <script type="text/javascript" src="__HOME__/js/classie.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".n_list").mouseenter(function () {
+                $(this).find(".a_link").addClass("hover");
+                $(this).find("ul").show();
+            }).mouseleave(function () {
+                $(this).find(".a_link").removeClass("hover");
+                $(this).find("ul").hide();
+            });
+            $(".order .title_nav").click()
+        });
+    </script>
+
+</body>
+
+</html>
